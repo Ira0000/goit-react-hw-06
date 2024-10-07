@@ -5,5 +5,3 @@ export const addContact = createAction("contacts/addContact");
 export const deleteContact = createAction("contacts/deleteContact");
 
 export const changeFilter = createAction("contacts/changeFilter");
-
-console.log(changeFilter(222));

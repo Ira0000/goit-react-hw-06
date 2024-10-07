@@ -34,12 +34,12 @@ export const contactReducer = (state = initialState, action) => {
 
     case "contacts/changeFilter":
       return {
-        contacts: {
-          filters: {
-            name: action.payload.toLowerCase().trim(),
-          },
+        ...state,
+        filters: {
+          name: String(action.payload),
         },
       };
+
     default:
       return state;
   }
