@@ -12,7 +12,7 @@ const SearchBox = () => {
   const id = { useId };
   return (
     <div className={s.searchContainer}>
-      <lable htmlFor={id}>Find contacts by name</lable>
+      <label htmlFor={id}>Find contacts by name</label>
       <input
         id={id}
         type="text"
